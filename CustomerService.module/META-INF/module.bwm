@@ -10,6 +10,7 @@
       <parameters xmi:id="_yXodgGBrEeeuL9GFFVgdQQ">
         <parameterMapping xmi:id="_yXodgWBrEeeuL9GFFVgdQQ" parameterName="id" parameterType="Path" required="true"/>
       </parameters>
+      <advancedConfig xmi:id="_yLkWsE9yEem1GblOyRkEwA" blockingQueueSize="2147483647"/>
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_yXWwsmBrEeeuL9GFFVgdQQ" bindingName="RestService"/>
   </sca:service>
@@ -23,6 +24,7 @@
       <parameters xmi:id="_aS4JYGB-EeeuL9GFFVgdQQ">
         <parameterMapping xmi:id="_aS4JYWB-EeeuL9GFFVgdQQ" parameterName="id" parameterType="Path" required="true"/>
       </parameters>
+      <advancedConfig xmi:id="_yLkWsU9yEem1GblOyRkEwA" blockingQueueSize="2147483647"/>
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_aSquAWB-EeeuL9GFFVgdQQ" bindingName="RestService1"/>
   </sca:service>

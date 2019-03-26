@@ -59,7 +59,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>DB_URL</name>
-			<value>jdbc:postgresql://bwce-customer.cw5wfv31yf6s.us-east-1.rds.amazonaws.com:5432/customer</value>
+			<value>jdbc:postgresql://acctcustomerdb.cosweg9a09hg.us-east-2.rds.amazonaws.com:5432/myacctcustomerdb</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -67,7 +67,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>DB_USER</name>
-			<value>tibco</value>
+			<value>masteruser</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -75,7 +75,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>DB_PASS</name>
-			<value>#!9trYPJqTj2p9UEoQt59mcc4LpzBLHx2YHRtE5F5sEV4=</value>
+			<value>#!QXPv7QUrxuf4QXs/sPG98uDdAr29bJFaBFTq4kmK308=</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
