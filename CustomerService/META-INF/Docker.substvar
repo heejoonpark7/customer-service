@@ -82,13 +82,5 @@
 			<type>String</type>
 			<isOverride>true</isOverride>
 		</globalVariable>
-		<globalVariable>
-			<name>//CustomerService.module//CLIENT_SERVICE</name>
-			<value>#CLIENT_SERVICE#</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-		</globalVariable>
 	</globalVariables>
 </repository>
