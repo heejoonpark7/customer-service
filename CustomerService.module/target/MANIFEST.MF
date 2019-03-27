@@ -1,0 +1,25 @@
+Manifest-Version: 1.0.0.201903262331
+Bundle-SymbolicName: CustomerService.module
+Bundle-ManifestVersion: 2
+TIBCO-BW-Edition: bwcf
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.pal
+ ette; filter:="(name=bw.jdbc)",com.tibco.bw.sharedresource.model; fil
+ ter:="(name=bw.httpclient)",com.tibco.bw.sharedresource.model; filter
+ :="(name=bw.httpconnector)",com.tibco.bw.sharedresource.model; filter
+ :="(name=bw.jdbc)",com.tibco.bw.binding.model; filter:="(name=bw.rest
+ )",com.tibco.bw.binding.model; filter:="(name=bw.rest.reference.bindi
+ ng)"
+TIBCO-BWCE-Edition-Target: cf
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.3.0 V29 2017-05-09
+Bundle-Name: CustomerService Module
+Bundle-Version: 1.0.0.201903262331
+Bundle-ClassPath: .,lib/plexus-cipher-1.4.jar,lib/sonar-scanner-api-2.
+ 10.0.1189.jar,lib/sonar-maven-plugin-3.5.0.1254.jar,lib/plexus-sec-di
+ spatcher-1.4.jar,lib/commons-lang-2.6.jar,lib/plexus-utils-3.0.22.jar
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+
