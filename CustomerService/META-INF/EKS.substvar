@@ -90,5 +90,29 @@
 			<type>String</type>
 			<isOverride>true</isOverride>
 		</globalVariable>
+		<globalVariable>
+			<name>//CustomerService.module//BootstrapServer</name>
+			<value>#BootstrapServer#</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>true</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//CustomerService.module//KafkaTopic</name>
+			<value>#KafkaTopic#</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>true</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//CustomerService.module//DefaultPort</name>
+			<value>#DefaultPort#</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>true</isOverride>
+		</globalVariable>
 	</globalVariables>
 </repository>

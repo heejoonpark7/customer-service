@@ -39,6 +39,9 @@
   <sca:property xmi:id="_x_ZuQGBsEeeuL9GFFVgdQQ" name="DB_USER" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_yFKYAGBsEeeuL9GFFVgdQQ" name="DB_PASS" type="property:password" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_pjJ-IFHdEemphu4pept3gQ" name="CLIENT_SERVICE" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_oFs7AFOFEemWGqatVRtwCA" name="BootstrapServer" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3Gv4UFOFEemWGqatVRtwCA" name="KafkaTopic" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TwIAMFQNEemWGqatVRtwCA" name="DefaultPort" type="XMLSchema:int" scaext:simpleValue="" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_OGQ9MGBrEeeuL9GFFVgdQQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OGQ9MWBrEeeuL9GFFVgdQQ" processName="customerservice.module.CustomerAccount"/>
     <sca:service xmi:id="_yXWJoGBrEeeuL9GFFVgdQQ" name="customer-accountdetails">

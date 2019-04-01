@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:kafka="http://ns.tibco.com/bw/sharedresource/kafka" xmi:id="_dbLSAVOFEemWGqatVRtwCA" name="customerservice.module.KafkaConnectionResource" type="kafka:KafkaConnection">
+  <jndi:configuration xsi:type="kafka:KafkaConnection" xmi:id="_dbLSAlOFEemWGqatVRtwCA" bootstrapServers="BootstrapServer a3fa87b99536611e98680029afdf4dd3-1834073657.us-east-2.elb.amazonaws.com:32400" reconnectBackoffMs="50" retryBackoffMs="100" requestTimeout="40000" metadataMaxAge="300000">
+    <substitutionBindings xmi:id="_egyPMFOFEemWGqatVRtwCA" template="bootstrapServers" propName="BootstrapServer"/>
+  </jndi:configuration>
+</jndi:namedResource>

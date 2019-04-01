@@ -83,10 +83,34 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CustomerService.module//CLIENT_SERVICE</name>
-			<value>bw-account-service</value>
+			<value>10.0.0.244</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
+			<isOverride>true</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//CustomerService.module//BootstrapServer</name>
+			<value>a3fa87b99536611e98680029afdf4dd3-1834073657.us-east-2.elb.amazonaws.com:32400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//CustomerService.module//KafkaTopic</name>
+			<value>mytopic</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//CustomerService.module//DefaultPort</name>
+			<value>8082</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
 			<isOverride>false</isOverride>
 		</globalVariable>
 	</globalVariables>
