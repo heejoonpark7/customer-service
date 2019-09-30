@@ -173,99 +173,6 @@
             </complexType>
             <element name="DuplicateKeyException" type="tns:DuplicateKeyExceptionType"/>
         </schema>
-        <schema
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/send+9e8fe397-99f9-45bf-9c58-44df514f4bda+KafkaSendMessageInput"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/send+9e8fe397-99f9-45bf-9c58-44df514f4bda+KafkaSendMessageInput">
-            <complexType name="KafkaSendMessageInput">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="0"
-                        name="ProducerConfig" type="tns:ProducerConfig"/>
-                    <element maxOccurs="1" minOccurs="1" name="Messages" type="tns:Messages"/>
-                </sequence>
-            </complexType>
-            <element name="KafkaSendMessageInput" type="tns:KafkaSendMessageInput"/>
-            <complexType name="ProducerConfig">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="0" name="topic" type="string"/>
-                    <element maxOccurs="1" minOccurs="0"
-                        name="batch.size" type="integer"/>
-                    <element maxOccurs="1" minOccurs="0"
-                        name="client.id" type="string"/>
-                    <element maxOccurs="1" minOccurs="0"
-                        name="linger.ms" type="long"/>
-                    <element maxOccurs="1" minOccurs="0"
-                        name="max.request.size" type="integer"/>
-                    <element maxOccurs="1" minOccurs="0" name="additonalProperties">
-                        <complexType>
-                            <sequence>
-                                <element maxOccurs="2147483647"
-                                    minOccurs="0" name="property">
-                                    <complexType>
-                                    <sequence>
-                                    <element maxOccurs="1"
-                                    minOccurs="1" name="key" type="string"/>
-                                    <element maxOccurs="1"
-                                    minOccurs="1"
-                                    name="value" type="string"/>
-                                    </sequence>
-                                    </complexType>
-                                </element>
-                            </sequence>
-                        </complexType>
-                    </element>
-                </sequence>
-            </complexType>
-            <complexType name="Messages">
-                <sequence>
-                    <element maxOccurs="unbounded" minOccurs="0" name="message">
-                        <complexType>
-                            <sequence>
-                                <element maxOccurs="1" minOccurs="0"
-                                    name="key" type="string"/>
-                                <element maxOccurs="1" minOccurs="1"
-                                    name="message" type="string"/>
-                            </sequence>
-                        </complexType>
-                    </element>
-                </sequence>
-            </complexType>
-        </schema>
-        <schema
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/send+9e8fe397-99f9-45bf-9c58-44df514f4bda+KafkaSendMessageOutput"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/send+9e8fe397-99f9-45bf-9c58-44df514f4bda+KafkaSendMessageOutput">
-            <complexType name="KafkaSendMessageOutput">
-                <sequence>
-                    <element maxOccurs="unbounded" minOccurs="0"
-                        name="result" type="tns:result"/>
-                </sequence>
-            </complexType>
-            <element name="KafkaSendMessageOutput" type="tns:KafkaSendMessageOutput"/>
-            <complexType name="result">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1" name="status" type="string"/>
-                    <element maxOccurs="1" minOccurs="0"
-                        name="SendSuccess" type="tns:SendSuccess"/>
-                    <element maxOccurs="1" minOccurs="0"
-                        name="SendFailed" type="tns:SendFailed"/>
-                </sequence>
-            </complexType>
-            <complexType name="SendSuccess">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1" name="topic" type="string"/>
-                    <element maxOccurs="1" minOccurs="1" name="offset" type="long"/>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="partition" type="int"/>
-                </sequence>
-            </complexType>
-            <complexType name="SendFailed">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="errorCode" type="string"/>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="errorMessage" type="string"/>
-                </sequence>
-            </complexType>
-        </schema>
         <wsdl:definitions
             targetNamespace="http://xmlns.example.com/20170703234528PLT"
             xmlns:extns="http://www.example.com/namespaces/tns/1499139982005"
@@ -689,60 +596,6 @@
                                     xsi:type="notation:Bounds" y="11"/>
                                     </children>
 
-                                    <children type="4002">
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
-
-                                    <layoutConstraint
-                                    x="293"
-                                    xsi:type="notation:Bounds" y="11"/>
-                                    </children>
-
                                     <styles xsi:type="notation:DrawerStyle"/>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -943,7 +796,7 @@
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -951,17 +804,6 @@
             <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[25, 8, -145, -50]$[146, 50, -24, -8]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.2"/>
-            <bendpoints points="[25, 0, -138, 0]$[139, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1046,10 +888,6 @@
                 <bpws:literal>customerservice.module.KafkaConnectionResource</bpws:literal>
             </bpws:from>
         </bpws:variable>
-        <bpws:variable element="ns3:KafkaSendMessageInput"
-            name="KafkaSendMessage-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns4:KafkaSendMessageOutput"
-            name="KafkaSendMessage" sca-bpel:internal="true"/>
         <bpws:variable name="KafkaTopic" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             tibex:propertySource="KafkaTopic" type="xsd:string"/>
@@ -1075,9 +913,7 @@
                             <bpws:links>
                                 <bpws:link
                                     name="GetCustomerDetailsToget" tibex:linkType="SUCCESS"/>
-                                <bpws:link name="getToKafkaSendMessage" tibex:linkType="SUCCESS"/>
-                                <bpws:link
-                                    name="KafkaSendMessageTogetOut" tibex:linkType="SUCCESS"/>
+                                <bpws:link name="getTogetOut" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="0dee1fec-6d33-4228-8a32-ad4ec7122003"/>
@@ -1094,7 +930,7 @@
                                     expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20170703234528PLT&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1499142120329&quot; xmlns:tns2=&quot;http://www.example.com/namespaces/tns/1499139982005&quot; xmlns:tns3=&quot;http://www.example.com/namespaces/tns/1499141585825&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;get1.item&quot;/>&#xa;    &lt;xsl:param name=&quot;GetCustomerDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:CustomerAccountDetails>&#xa;            &lt;tns2:name>&#xa;                &lt;xsl:value-of select=&quot;$GetCustomerDetails/tns3:name&quot;/>&#xa;            &lt;/tns2:name>&#xa;            &lt;tns2:accountDetails>&#xa;                &lt;tns2:AccountNumber>&#xa;                    &lt;xsl:value-of select=&quot;$get1.item/tns1:AccountNumber&quot;/>&#xa;                &lt;/tns2:AccountNumber>&#xa;                &lt;tns2:AccountType>&#xa;                    &lt;xsl:value-of select=&quot;$get1.item/tns1:AccountType&quot;/>&#xa;                &lt;/tns2:AccountType>&#xa;                &lt;tns2:Amount>&#xa;                    &lt;xsl:value-of select=&quot;$get1.item/tns1:Amount&quot;/>&#xa;                &lt;/tns2:Amount>&#xa;            &lt;/tns2:accountDetails>&#xa;        &lt;/tns2:CustomerAccountDetails>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <bpws:targets>
-                                    <bpws:target linkName="KafkaSendMessageTogetOut"/>
+                                    <bpws:target linkName="getTogetOut"/>
                                 </bpws:targets>
                             </bpws:reply>
                             <bpws:extensionActivity>
@@ -1150,54 +986,9 @@
                                     <bpws:target linkName="GetCustomerDetailsToget"/>
                                 </bpws:targets>
                                 <bpws:sources>
-                                    <bpws:source linkName="getToKafkaSendMessage"/>
+                                    <bpws:source linkName="getTogetOut"/>
                                 </bpws:sources>
                             </bpws:invoke>
-                            <bpws:extensionActivity>
-                                <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.tibco.com/namespaces/tnt/plugins/send+9e8fe397-99f9-45bf-9c58-44df514f4bda+KafkaSendMessageInput&quot; xmlns:tns3=&quot;http://www.example.com/namespaces/tns/1499141585825&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1499142120329&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;GetCustomerDetails&quot;/>&lt;xsl:param name=&quot;get1&quot;/>&lt;xsl:template name=&quot;KafkaSendMessage-input&quot; match=&quot;/&quot;>&lt;tns4:KafkaSendMessageInput>&lt;Messages>&lt;message>&lt;message>&lt;xsl:value-of select=&quot;concat(&amp;quot;Customer: &amp;quot;, $GetCustomerDetails/tns3:name, &amp;quot; inquired about account details info; account number: &amp;quot;, string($get1/item/tns1:AccountDetailsElement/tns1:AccountNumber), &amp;quot;, account type: &amp;quot;, $get1/item/tns1:AccountDetailsElement/tns1:AccountType, &amp;quot;, amount: $&amp;quot;, string($get1/item/tns1:AccountDetailsElement/tns1:Amount), &amp;quot;.&amp;quot;)&quot;/>&lt;/message>&lt;/message>&lt;/Messages>&lt;/tns4:KafkaSendMessageInput>&lt;/xsl:template>&lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
-                                    inputVariable="KafkaSendMessage-input"
-                                    name="KafkaSendMessage"
-                                    outputVariable="KafkaSendMessage"
-                                    tibex:xpdlId="9e8fe397-99f9-45bf-9c58-44df514f4bda" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                                    <bpws:targets>
-                                    <bpws:target linkName="getToKafkaSendMessage"/>
-                                    </bpws:targets>
-                                    <bpws:sources>
-                                    <bpws:source linkName="KafkaSendMessageTogetOut"/>
-                                    </bpws:sources>
-                                    <tibex:inputBindings>
-                                    <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.tibco.com/namespaces/tnt/plugins/send+9e8fe397-99f9-45bf-9c58-44df514f4bda+KafkaSendMessageInput&quot; xmlns:tns3=&quot;http://www.example.com/namespaces/tns/1499141585825&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1499142120329&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;get1.item&quot;/>&#xa;    &lt;xsl:param name=&quot;GetCustomerDetails&quot;/>&#xa;    &lt;xsl:template name=&quot;KafkaSendMessage-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns4:KafkaSendMessageInput>&#xa;            &lt;Messages>&#xa;                &lt;message>&#xa;                    &lt;message>&#xa;                        &lt;xsl:value-of select=&quot;concat(&amp;quot;Customer: &amp;quot;, $GetCustomerDetails/tns3:name, &amp;quot; inquired about account details info; account number: &amp;quot;, string($get1.item/tns1:AccountNumber), &amp;quot;, account type: &amp;quot;, $get1.item/tns1:AccountType, &amp;quot;, amount: $&amp;quot;, string($get1.item/tns1:Amount), &amp;quot;.&amp;quot;)&quot;/>&#xa;                    &lt;/message>&#xa;                &lt;/message>&#xa;            &lt;/Messages>&#xa;        &lt;/tns4:KafkaSendMessageInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                                    </tibex:inputBindings>
-                                    <tibex:config>
-                                    <bwext:BWActivity
-                                    activityTypeID="bw.kafka.Send"
-                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
-                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
-                                    xmlns:kafka="http://ns.tibco.com/bw/palette/kafka" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                    <attributeBindings
-                                    bindingType="moduleProperty"
-                                    eAttributeName="topicName" processProperty="KafkaTopic"/>
-                                    <activityConfig>
-                                    <properties
-                                    name="config" xsi:type="activityconfig:EMFProperty">
-                                    <type href="http://ns.tibco.com/bw/palette/kafka#//Send"/>
-                                    <value acks="1"
-                                    batchSize="16384"
-                                    bufferMemory="33554432"
-                                    compressionType="none"
-                                    kafkaConnection="KafkaProperty"
-                                    keySerializer="String"
-                                    maxRequestSize="1048576"
-                                    valueSerializer="String" xsi:type="kafka:Send"/>
-                                    </properties>
-                                    </activityConfig>
-                                    </bwext:BWActivity>
-                                    </tibex:config>
-                                </tibex:activityExtension>
-                            </bpws:extensionActivity>
                         </bpws:flow>
                     </bpws:scope>
                 </bpws:onMessage>
